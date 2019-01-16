@@ -35,6 +35,7 @@ namespace SPO17Books
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
+            services.AddScoped<ISqlService, SqlService>();
 
             services.AddMvc();
         }
